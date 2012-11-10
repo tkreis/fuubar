@@ -22,7 +22,7 @@ describe Fuubar do
     end
 
     it 'should set the format of the bar' do
-      progress_bar.instance_variable_get(:@format_string).should == ' %c/%C |%w>%i| %e '
+      progress_bar.instance_variable_get(:@format_string).should == ' %c/%C F%w%i! %e '
     end
 
     it 'should set the total amount of specs' do
@@ -34,7 +34,7 @@ describe Fuubar do
     end
 
     it 'should set the bar mark to =' do
-      progress_bar.instance_variable_get(:@bar).progress_mark.should == '='
+      progress_bar.instance_variable_get(:@bar).progress_mark.should == 'U'
     end
 
   end
